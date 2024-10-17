@@ -1,0 +1,19 @@
+body{
+    background-image: url('images/fondsiteasso.png');
+    background-size: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 25vw;
+}
+
+header div:first-child{
+    width: 50%;
+    display: flex;
+    align-items: left;
+}
