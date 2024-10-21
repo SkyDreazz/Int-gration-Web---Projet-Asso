@@ -9,22 +9,62 @@
 body{
     background-image: url('images/fondsiteasso.png');
     background-size: 100%;
+    font-family: Poppins, "regular";
 }
 
 header{
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px
 }
 
-img{
-    width: 25vw;
-}
-
-header div:first-child{
-    width: 50%;
+.navbar {
+    gap: 50px;
     display: flex;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    align-items: center;
+    
 }
+
+
+.liennav {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    
+    
+}
+
+.contbar{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.liennav:hover{
+    transform: scale(125%);
+}
+
+
+
+
+.logo{
+    height: 70px;
+    left: 70px;
+    margin-left: 20px;
+}
+
+
 
 .contact{
     min-height: 100vh;
