@@ -12,3 +12,7 @@
     font-family: 'Somatic';
     src: url('fonts/Somatic-Rounded.otf');
 }
+
+img{
+    width: 30vw;
+}
