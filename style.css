@@ -3,11 +3,25 @@
     src: url('fonts/Poppins-Italic.ttf');
 }
 
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Somatic';
+    src: url('fonts/Somatic-Rounded.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+h1, h2{
+    font-family: 'Somatic';
 }
 
 body {
@@ -111,6 +125,10 @@ header {
   margin-top: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.question{
+    font-family: 'Poppins Bold';
 }
 
 .acontainer {
@@ -391,15 +409,106 @@ button:hover {
     margin-right: 10px;
 }
 
+footer div:first-child img{
+    width: 8vw;
+    background-color: white;
+    padding: 0.5vw 0.5vw;
+    border-radius: 5vw;
+}
+
+footer .footer-nav a{
+    color: white;
+    font-size: 1.2vw;
+}
+
 footer {
     padding: 20px;
-    background-color: #005f73;
+    background-color: #3d5a80;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div:nth-child(4) img{
+    width: 3vw;
 }
 
 footer p {
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 1024px) {
+
+    footer div:last-child {
+        width: 30%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .about-us p {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .marine-pollution .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marine-pollution .pollution-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .article_pollution {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .article_pollution div:first-child, .article_pollution div:last-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    .article_pollution div:first-child {
+        height: auto;
+    }
+
+    .join-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .join-us h2 {
+        font-size: 1.5em;
+    }
+
+    .join-us a {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -417,5 +526,110 @@ footer p {
 
     .polution img {
         width: 60vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contbar {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .about-us h2 {
+        font-size: 1.8em;
+    }
+
+    .about-us p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .marine-pollution h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .article_pollution {
+        padding: 20px;
+    }
+
+    .pollution-image {
+        width: 100%;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .pollution-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-nav a{
+        font-size: 1.5vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contbar {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .about-us h2 {
+        font-size: 1.5em;
+    }
+
+    .marine-pollution .pollution-image {
+        width: 100%;
+    }
+
+    .article_pollution div {
+        width: 100%;
+    }
+
+    .join-us h2 {
+        font-size: 1.2em;
     }
 }
